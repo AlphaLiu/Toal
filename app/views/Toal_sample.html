@@ -1,0 +1,956 @@
+<html class="no-js" lang="zh-CN">
+	<meta charset="utf-8">
+	<meta content="authenticity_token" name="csrf-param">
+	<meta content="j0yOTKguZA2JK2GeYSGj8YWgLnkvWIbtO62210ZktPs=" name="csrf-token">
+
+	<!-- Use the .htaccess and remove these lines to avoid edge case issues.
+	More info: h5bp.com/b/378 -->
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+
+	<title>Toal - book</title>
+	<!-- Mobile viewport optimized: j.mp/bplateviewport -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://dn-pragmaticly.qbox.me/assets/apple-touch-icon-152x152-precomposed-e53725df2515271621fd570839999330.png">
+
+	<link href="https://dn-pragmaticly.qbox.me/assets/desktop-96b209cce970c0ae70611101bd0aef64.css" media="all" rel="stylesheet" type="text/css">
+
+	<!-- More ideas for your <head> here: h5bp.com/d/head-Tips -->
+
+		<!-- Addition header -->
+		<script>
+			var data = {
+				projects: [{"id":"20909beaeff9","name":"Rails Projects","description":"","owner_id":"422dd02f96ef","tag_list":[],"status_template":3,"demo":false,"accountDead":false,"token":"d0075b1dfd10","owned":true},{"id":"b2a736b17eac","name":"Toal","description":"book","owner_id":"422dd02f96ef","tag_list":[],"status_template":3,"demo":false,"accountDead":false,"token":"bf99a19c88df","owned":true}],
+				account: {"id":"2280ae24d1fc","name":"personal","users_count":1,"projects_count":2}
+			};
+
+			var current_user = {"id":"422dd02f96ef","name":"Alpha","title":null,"email":"alpha.liu@me.com","avatar":"https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=48","account_name":"personal"};
+			current_user.tour_taken = true;
+			current_user.time_zone = "Beijing";
+			current_user.admin = true;
+			var current = { project_id: 'b2a736b17eac',
+				user_id: '422dd02f96ef' };
+			var default_avatar = "https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png";
+		</script>
+
+
+		<!--[if lt IE 9]>
+		<script src="https://dn-pragmaticly.qbox.me/assets/html5-dda4a55dd121fc86da8a36c493187a61.js" type="text/javascript"></script>
+		<script src="https://dn-pragmaticly.qbox.me/assets/augment.min-fa4867c069e7b6acefadf260b2fffcf2.js" type="text/javascript"></script>
+		<script src="https://dn-pragmaticly.qbox.me/assets/respond.min-8e72046a892aa47e25ca885347578c8d.js" type="text/javascript"></script>
+		<![endif]-->
+
+		<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+		<style type="text/css"></style>
+		<style>[touch-action="none"]{ -ms-touch-action: none; touch-action: none; }[touch-action="pan-x"]{ -ms-touch-action: pan-x; touch-action: pan-x; }[touch-action="pan-y"]{ -ms-touch-action: pan-y; touch-action: pan-y; }[touch-action="scroll"],[touch-action="pan-x pan-y"],[touch-action="pan-y pan-x"]{ -ms-touch-action: pan-x pan-y; touch-action: pan-x pan-y; }</style>
+		<script src="https://static.olark.com/jsclient-bucket3/application2.js?v=1409865287822" async="" defer="" data-cfasync="false"></script>
+		<style type="text/css">.olark-key,#hbl_code,#olark-data{display: none !important;}</style>
+		<link id="habla_style_div" type="text/css" rel="stylesheet" href="https://static.olark.com/css/4/c/4c68830163a2986281aae9d6c7ac3ed5.css?https">
+		<style type="text/css">
+			@media print {#habla_beta_container_do_not_rely_on_div_classes_or_names {display: none !important}}
+		</style>
+	</head>
+
+	<body class="desktop stage">
+		<script type="text/javascript">
+			if (window.innerWidth < 1280) {
+				document.getElementsByTagName('body')[0].className += ' sidebar-collapsed';
+			}
+		</script>
+
+		<article class="viewport" style="top: 25px;">
+
+		<aside class="sidebar">
+		<div class="sidebar-wrap">
+			<header class="sidebar-header guide-spot">
+			<ul class="nav projectNav">
+				<li class="go-launchpad">
+				<a href="/" title="回到控制面板">
+					<i class="iconfont prag-dashboard"></i>
+				</a>
+				</li>
+				<li class="dropdown" id="projects">
+				<a class="dropdown-toggle" href="#" data-toggle="dropdown">
+					<span title="Toal" class="project-name">Toal</span>
+					<i class="iconfont prag-chevron-down"></i>
+				</a>
+
+				<ul class="dropdown-menu">
+					<li class="menu-header">我的项目</li>
+					<div class="project-item project-20909beaeff9">
+						<a href="/projects/20909beaeff9" class="name">
+							<span>Rails Projects</span>
+						</a>
+
+						</div><div class="project-item project-b2a736b17eac selected">
+
+						<span class="setting"><a class="edit-project"><i class="iconfont prag-cog"></i></a></span>
+
+						<a href="#" class="name">
+							<span>Toal</span>
+						</a>
+
+					</div><li class="menu-header">参与的项目</li>
+					<li id="new-project-li"><a class="new-project">
+						<i class="iconfont prag-add"></i>创建新项目
+					</a></li>
+				</ul>
+
+				</li>
+			</ul>
+			</header>
+
+			<section id="search" class="sb-section">
+			<form class="global-search" action="">
+				<i class="iconfont prag-search"></i><input type="text" class="search-query" placeholder="搜索" tabindex="-1">
+			</form>
+			</section>
+
+			<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto; max-height: 192px;"><section id="sidebar-content" style="overflow: hidden; width: auto; height: auto; max-height: 192px;">
+				<section id="my-tickets" class="myTickets sb-section active">
+				<h4 draggable="true" class="sb-header user-item">
+					<i class="iconfont prag-user"></i>我的任务
+				</h4>
+				</section>
+
+				<hr class="separator">
+
+				<section id="sb-inbox" class="sb-section">
+				<h4 id="backlog" class="sb-header iteration-item" draggable="true">
+					<i class="iconfont prag-inbox"></i>收集箱
+				</h4>
+				</section>
+
+				<hr class="separator">
+
+				<section id="iterations" class="sb-section collapsible">
+				<h4 class="sb-header collapse-trigger">
+					<i class="iconfont prag-chevron-down collapse-pointer pull-right"></i>
+					<i class="iconfont prag-projects"></i>任务列表
+				</h4>
+				<div class="lists">
+					<ul class="sub-nav list collapse-target"></ul>
+				</div>
+				</section>
+
+				<hr class="separator">
+
+				<section id="team" class="sb-section collapsible">
+				<h4 class="sb-header collapse-trigger">
+					<i class="iconfont prag-chevron-down collapse-pointer pull-right"></i>
+					<i class="iconfont prag-members"></i>团队成员
+				</h4>
+				<ul class="sub-nav collapse-target"><li class="item" draggable="true" id="user-422dd02f96ef"><div class="counter">0</div>
+					<a href="/projects/b2a736b17eac/users/422dd02f96ef" class="people">Alpha</a>
+					</li></ul>
+					</section>
+					</section>
+					<div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 226px; background: rgb(0, 0, 0);"></div>
+					<div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div>
+				</div>
+
+				<div class="projectAction guide-spot">
+					<ul>
+						<li class="dropup" id="new-more-action">
+						<a id="action-new-resource" class="dropdown-toggle" data-toggle="dropdown" href="#new-more-action" title="新建任务列表/邀请团队成员">
+							<i class="iconfont prag-add collapsed-action"></i>
+						</a>
+						<ul class="dropdown-menu">
+							<li>
+							<a id="btn-new-iteration" data-toggle="modal" href="#new-iteration" data-backdrop="true" title="新建任务列表"><i class="iconfont prag-lists"></i>新建任务列表</a>
+							</li>
+							<li>
+							<a id="btn-invite-user" data-toggle="modal" href="#users-invite" data-backdrop="true" title="邀请团队成员"><i class="iconfont prag-members"></i>邀请团队成员</a>
+							</li>
+						</ul>
+						</li>
+						<li class="sit-right dropup" id="btn-more-action">
+						<a class="dropdown-toggle" data-toggle="dropdown" data-target="btn-more-action" title="管理任务列表和团队成员">
+							<i class="iconfont prag-cog collapsed-action"></i>
+						</a>
+
+						<ul class="dropdown-menu">
+							<li>
+							<a href="#manage-iterations" data-toggle="modal" data-backdrop="true" id="li-manage-iterations">
+								管理任务列表
+							</a>
+							</li>
+							<li>
+							<a href="#manage-team" data-toggle="modal" data-backdrop="true" id="li-manage-team">
+								管理团队成员
+							</a>
+							</li>
+							<li class="divider"></li>
+							<li>
+							<a id="btn-toggle-archive" href="#">
+								显示归档的数据
+							</a>
+							</li>
+							<li>
+							<a id="btn-toggle-sidebar" href="#" class="">
+								<span class="collapse-right">
+									<i class="iconfont prag-collapse-right"></i>
+									展开左边栏
+								</span>
+								<span class="collapse-left">
+									<i class="iconfont prag-collapse-left"></i> 收起左边栏
+								</span>
+							</a>
+							</li>
+						</ul>
+						</li>
+					</ul>
+				</div>
+			</div>
+			</aside>
+
+
+			<script type="text/javascript">
+				var elem;
+				if (document.getElementsByClassName) {
+					elem = document.getElementsByClassName("project-name")[0];
+				} else {
+					elem = document.querySelectorAll(".project-name")[0];
+				}
+				elem.innerHTML = "Toal";
+				elem.setAttribute('title', "Toal");
+			</script>
+
+			<div role="main" class="main">
+
+				<section class="panel list-panel tickets">
+				<header class="panel-header navbar guide-spot">
+				<ul class="nav centerNav">
+					<li class="dropdown" id="new-ticket">
+					<a class="dropdown-toggle" data-toggle="dropdown" href="#new-ticket" tabindex="-1"><i class="iconfont prag-plus"></i></a>
+					<div class="dropdown-menu" id="ticket-create">
+						<form>
+							<div class="controls">
+								<input type="text" name="title" placeholder="添加一个任务并分配给'Alpha'" required="required">
+								<span class="inline-tip"><i class="iconfont prag-enter-sign"></i>按回车创建</span>
+							</div>
+						</form>
+
+					</div>
+					</li>
+				</ul>
+				</header>
+
+				<article class="content">
+				<div class="list-head" style="display: block;">
+					<h2>
+						<span class="title">我的任务</span>
+						<div class="list-filter dropdown">
+							筛选: <a class="dropdown-toggle" data-toggle="dropdown" data-target="list-fileter-menu"><span class="sorter">默认</span> <i class="iconfont prag-chevron-down"></i></a>
+							<ul id="list-fileter-menu" class="dropdown-menu" role="menu">
+								<li role="presentation"><a role="menuitem" class="sort" data-sort="sequence" tabindex="-1" href="#">默认</a></li>
+								<li role="presentation"><a role="menuitem" class="sort" data-sort="priority" tabindex="-1" href="#">按重要性</a></li>
+								<li role="presentation"><a role="menuitem" class="sort" data-sort="assignee_id" tabindex="-1" href="#">按负责人</a></li>
+								<li role="presentation"><a role="menuitem" class="sort" data-sort="due_date" tabindex="-1" href="#">按截止时间</a></li>
+								<li role="presentation" class="divider"></li>
+								<li role="presentation"><a role="menuitem" class="filter-me" tabindex="-1" href="#" style="display: none;"> <i class="iconfont"></i> 只显示与我相关的任务</a></li>
+								<li role="presentation"><a role="menuitem" class="filter-fo" tabindex="-1" href="#" style="display: block;"> <i class="iconfont"></i> 同时显示成员协作的任务</a></li>
+							</ul>
+						</div>
+					</h2>
+				</div>
+				<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 232px;"><section class="ticketList" style="display: block; overflow: hidden; width: auto; height: 232px;">
+
+					<div class="ticket-placeholder">
+						<p>
+
+
+						<span class="hint-text">「</span>我的任务<span class="hint-text">」</span>里包含了所有分配给你的<span class="hint-text">任务</span>和你参与协作的任务
+
+
+
+
+						<br>
+
+						<span class="tip">
+							小贴士: 按下 <span class="button">n</span> 键或者点击导航栏的 <span class="button">+</span> 来创建任务
+						</span>
+
+						</p>
+					</div>
+					</section><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 532px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+
+
+					</article>
+					</section>
+
+					<section class="panel detail-panel ticketDetail">
+					<header class="panel-header guide-spot">
+					<div class="navbar">
+						<ul class="nav global-nav pull-right">
+							<li class="dropdown" id="notifications" timeago="[object Object]">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#notificatoins" tabindex="-1"><i class="iconfont prag-bell"><span class="counter">0</span></i></a>
+							<div class="dropdown-menu">
+								<div class="header">
+									<a href="#" class="mark-all-as-read"><i class="iconfont prag-status-approved"></i> 全部已读</a>
+									<h3>通知</h3>
+								</div>
+								<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: 100%; height: auto; max-height: 217px;"><div class="items" style="overflow: hidden; width: 100%; height: auto; max-height: 217px;"><div class="placeholder">
+											<i class="iconfont prag-bell"></i>
+											<p class="text">目前没有新的通知</p>
+										</div>
+								</div><div class="slimScrollBar" style="width: 7px; position: absolute; top: 0px; opacity: 0.4; display: block; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 7px; height: 100%; position: absolute; top: 0px; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; opacity: 0.2; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+							</div>
+							</li>
+							<li class="dropdown" id="help">
+							<a class="help" data-toggle="dropdown" href="#" tabindex="-1"><i class="iconfont prag-question-mark"></i></a>
+							<ul class="dropdown-menu">
+								<li>
+								<a class="guide" href="#">
+									<i class="iconfont prag-compass"></i>功能向导
+								</a>
+								</li>
+								<li>
+								<a class="tutorials" href="#">
+									<i class="iconfont prag-video"></i>视频教程
+								</a>
+								</li>
+								<li>
+								<a class="keyboard" href="#">
+									<i class="iconfont prag-keyboard"></i>快捷操作
+								</a>
+								</li>
+								<li>
+								<a class="announcement" href="http://fengche.co/blog/tags/announcement/" target="_blank">
+									<i class="iconfont prag-feedback"></i>风车公告
+								</a>
+								</li>
+								<li>
+								<a class="feedback" href="#uservoice" data-toggle="modal" data-backdrop="true">
+									<i class="iconfont prag-envelope"></i>联系我们
+								</a>
+								</li>
+								<li class="livechat" style="display: none;">
+								<a href="#">
+									<i class="iconfont prag-discuss"></i>在线客服
+								</a>
+								</li>
+							</ul>
+							</li>
+							<li class="dropdown" id="profile">
+							<a class="dropdown-toggle avatar" data-toggle="dropdown" href="#profile" tabindex="-1">
+								<img alt="Alpha" height="28" src="https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=56" width="28">
+							</a>
+							<ul class="dropdown-menu">
+								<li>
+								<a class="modalTab" href="#profileModal" data-toggle="modal" tab-toggle="#profile-edit" data-backdrop="true">
+									<i class="iconfont prag-profile"></i>个人资料
+								</a>
+								</li>
+								<li><a class="modalTab" href="#profileModal" data-toggle="modal" tab-toggle="#account-manage" data-backdrop="true">
+									<i class="iconfont prag-briefcase"></i>组织管理
+								</a>
+								</li>
+								<li>
+								<a class="modalTab" href="#profileModal" data-toggle="modal" tab-toggle="#notification-settings" data-backdrop="true">
+									<i class="iconfont prag-bell"></i>通知设置
+								</a>
+								</li>
+								<li>
+								<a href="/logout">
+									<i class="iconfont prag-logout"></i>退出
+								</a>
+								</li>
+							</ul>
+							</li>
+						</ul>
+					</div>
+					</header>
+
+
+					<div class="ticket-head"></div>
+
+					<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 226px;"><article id="sectionAndActivities" class="content" style="overflow: hidden; width: auto; height: 226px;">
+
+						<section class="ticketSection"><div class="ticket-placeholder">
+							<p>
+							<strong>任务详情栏</strong>，选择一个任务来查看和编辑详细信息。<br><span class="tip">小贴士：可以用 <span class="button">↑</span> <span class="button">↓</span> 或者 <span class="button">j</span> <span class="button">k</span> 来选择任务
+							</span></p>
+						</div>
+						</section>
+
+						<section class="activities">
+						<header class="header hide">
+						<h4>动态</h4>
+						</header>
+
+						<div id="comments" class="comments"></div>
+						</section>
+						</article><div class="slimScrollBar" style="width: 10px; position: absolute; top: 0px; opacity: 0.4; display: none; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; z-index: 99; right: 1px; height: 526px; background: rgb(0, 0, 0);"></div><div class="slimScrollRail" style="width: 10px; height: 100%; position: absolute; top: 0px; display: block; border-top-left-radius: 7px; border-top-right-radius: 7px; border-bottom-right-radius: 7px; border-bottom-left-radius: 7px; opacity: 0; z-index: 90; right: 1px; background: rgb(51, 51, 51);"></div></div>
+
+						<footer class="addComment hide">
+						<form id="comment-create" action="javascript:void(0)">
+							<div class="comment-icon"><img alt="Alpha" height="32" src="https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=64" width="32"></div>
+							<div class="comment-field">
+								<textarea id="commenttext" name="content" placeholder="讨论" tabindex="8" style="height: 32px;"></textarea>
+								<button class="save">发布</button>
+								<div class="comment-tip">支持 Markdown, Ctrl + Enter 发布讨论</div>
+							</div>
+						</form>
+						</footer>
+						</section>
+					</div>
+					</article>
+
+					<article id="projectForm" class="modal" style="display:none;">
+					</article>
+
+					<article id="new-iteration" class="modal" style="display:none;">
+					<form id="iteration-create">
+						<header class="modal-header">
+						<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+						<h3>新建任务列表</h3>
+						</header>
+
+						<section class="modal-body">
+						<div class="error-messages"></div>
+						<div>
+							<label>名称:</label>
+							<input type="text" class="text" name="name" required="required" autofocus="autofocus">
+						</div>
+						<div>
+							<label>描述:</label>
+							<textarea type="text" class="text" name="description"></textarea>
+						</div>
+						</section>
+
+						<footer class="modal-footer">
+						<button class="button button-primary">创建</button>
+						</footer>
+					</form>
+					</article>
+
+					<article id="manage-team" class="modal" style="display:none;">
+					<header class="modal-header">
+					<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+					<h3>管理团队成员</h3>
+					</header>
+
+					<section class="modal-body">
+					<div class="user-info">
+						<ul class="unstyled"><li><div class="user user-422dd02f96ef">
+								<img width="32" height="32" src="https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=48" alt="Alpha">
+								Alpha
+								alpha.liu@me.com
+
+							</div>
+							</li></ul>
+						</div>
+						</section>
+						</article>
+
+						<article id="manage-iterations" class="modal" style="display:none;">
+						<header class="modal-header">
+						<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+						<h3>管理任务列表</h3>
+						</header>
+
+						<section class="modal-body">
+						<div class="iteration-info">
+							<table>
+								<thead>
+									<tr>
+										<th>任务列表名称</th>
+										<th>
+											所有任务
+											(<b class="todo">未完成</b>/<b class="done">已完成</b>)</th>
+										<th>操作</th>
+									</tr>
+								</thead>
+								<tbody class="list"></tbody>
+							</table>
+						</div>
+						</section>
+						</article>
+
+						<article id="profileModal" class="modal" style="display:none;">
+						<header class="modal-header">
+						<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+						<ul class="nav nav-tabs">
+							<li><a href="#profile-edit" data-toggle="tab">个人资料</a></li>
+							<li><a href="#account-manage" data-toggle="tab">组织管理</a></li>
+							<li><a href="#subscription" data-toggle="tab">订阅付款</a></li>
+							<li><a href="#notification-settings" data-toggle="tab">通知设置</a></li>
+						</ul>
+						</header>
+
+						<div class="modal-body tab-content">
+							<form class="tab-pane" id="profile-edit">
+								<div class="error-messages"></div>
+								<div class="clearfix avatar-control">
+									<div class="span2 avatar">
+										<img alt="Alpha" height="40" id="avatarImg" src="https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=80" width="40">
+									</div>
+									<div class="span2 btn-group">
+										<div id="avatar-upload-btn" class="btn" style="position: relative; overflow: hidden; direction: ltr;">
+											上传照片
+
+											<img alt="Loading" class="hidden spinner" src="https://dn-pragmaticly.qbox.me/assets/loading-3500c2de5913cff235f6b635e2e6bc56.gif">
+											<input multiple="multiple" type="file" name="file" tabindex="-1" style="position: absolute; right: 0px; top: 0px; font-family: Arial; font-size: 118px; margin: 0px; padding: 0px; cursor: pointer; opacity: 0;"></div>
+									</div>
+								</div>
+								<div class="control-group">
+									<label>姓名:</label>
+									<input type="text" class="text" name="user[name]" value="Alpha" required="required" id="user_name">
+								</div>
+								<div class="control-group">
+									<label>电子邮件</label>
+									<input type="email" class="text" name="user[email]" readonly="readonly" value="alpha.liu@me.com" required="required" id="user_email">
+								</div>
+								<div class="control-group">
+									<label>职位</label>
+									<input type="text" class="text" name="user[title]" value="" id="user_title">
+								</div>
+								<div class="control-group">
+									<label>组织名称:</label>
+									<input type="text" class="text" name="user[account_name]" value="personal" id="user_account_name">
+								</div>
+								<div class="control-group">
+									<label>当前密码:</label>
+									<input type="password" class="text" name="user[identity][current_password]">
+								</div>
+								<div class="control-group">
+									<label>新密码:</label>
+									<input type="password" class="text" name="user[identity][password]" id="identity_password">
+								</div>
+								<div class="control-group">
+									<label>密码确认:</label>
+									<input type="password" class="text" name="user[identity][password_confirmation]" id="identity_password_confirmation">
+								</div>
+								<div class="control-group">
+									<label>语言设置:</label>
+									<select name="user[locale]">
+										<option value="zh-cn">简体中文</option>
+										<option value="en">English</option>
+									</select>
+								</div>
+
+								<footer class="modal-footer">
+								<button class="button button-primary">更新</button>
+								</footer>
+							</form>
+
+							<div class="tab-pane" id="notification-settings">
+								<form id="notification-form">
+									<div class="error-messages"></div>
+
+									<h5>邮件通知设定</h5>
+									<div class="modal-box">
+										<div class="control-group">
+											<input type="hidden" name="user[email_notification]" value="0">
+											<label class="checkbox">
+												<input type="checkbox" name="user[email_notification]" value="1" checked="checked">
+												接收邮件通知
+											</label>
+										</div>
+
+										<div class="control-group">
+											<input type="hidden" name="user[newsletter]" value="0">
+											<label class="checkbox">
+												<input type="checkbox" name="user[newsletter]" value="1" checked="checked">
+												订阅风车通告
+											</label>
+										</div>
+									</div>
+
+									<h5>回顾与提醒邮件</h5>
+									<div class="modal-box">
+										<div class="control-group">
+											<input type="hidden" name="user[daily_review]" value="0">
+											<label class="checkbox">
+												<input type="checkbox" name="user[daily_review]" value="1" checked="checked">
+												启用每日回顾
+											</label>
+										</div>
+
+										<div class="control-group">
+											<input type="hidden" name="user[daily_remind]" value="0">
+											<label class="checkbox">
+												<input type="checkbox" name="user[daily_remind]" value="1" checked="checked">
+												启用过期任务提醒
+											</label>
+										</div>
+									</div>
+
+									<div class="control-group">
+										<input type="hidden" name="user[smart_notification]" value="0">
+										<label class="checkbox">
+											<input type="checkbox" name="user[smart_notification]" value="1">
+											<strong>启用智能通知</strong> <i>(当网页或者手机在线时，不发送邮件通知)</i>
+										</label>
+									</div>
+
+									<footer class="modal-footer">
+									<button class="button button-primary">更新</button>
+									</footer>
+								</form>
+							</div>
+
+
+							<div class="tab-pane" id="account-manage">
+								<div class="account-info">
+									<h2>
+										<i class="iconfont prag-briefcase"></i> personal
+										<time title="2012-11-07 01:18:25 UTC">
+										开始于
+										2012年11月07日
+										</time>
+									</h2>
+								</div>
+
+
+								<h5>所有项目</h5>
+								<div class="project-info">
+									<table>
+										<thead>
+											<tr>
+												<th>项目名称</th>
+												<th>任务列表</th>
+												<th>任务</th>
+												<th>团队人员</th>
+											</tr>
+										</thead>
+										<tbody>
+											<tr class="project project-20909beaeff9">
+												<td class="name">Rails Projects</td>
+												<td class="iterations">1</td>
+												<td class="tickets">4</td>
+												<td class="users">1</td>
+											</tr>
+											<tr class="project project-b2a736b17eac">
+												<td class="name">Toal</td>
+												<td class="iterations">0</td>
+												<td class="tickets">0</td>
+												<td class="users">1</td>
+											</tr>
+										</tbody>
+									</table>
+								</div>
+
+								<h5>组织成员</h5>
+								<div class="user-info">
+									<ul class="unstyled">
+										<li>
+										<div class="user user-422dd02f96ef">
+											<img alt="Alpha" height="24" src="https://secure.gravatar.com/avatar/9a68e1cd013ec0cd88872d763158b05c?default=https%3A%2F%2Fdn-pragmaticly.qbox.me%2Fdefault-avatar.png&amp;size=48" width="24">
+											Alpha,
+											alpha.liu@me.com
+										</div>
+										</li>
+									</ul>
+								</div>
+
+							</div>
+
+							<div class="tab-pane" id="subscription">
+								<div class="account-billing">
+									<div class="status expired">
+										<h5>
+											你当前的方案
+											<span class="label label-important">
+												试用期已经结束
+											</span>
+										</h5>
+
+										<div class="progress progress-danger">
+											<div class="bar" style="width: 100%"></div>
+										</div>
+
+										<p class="subscription">
+										<span class="start">11/07/12</span>
+										<span class="end">12/07/12</span>
+										</p>
+
+										<p class="help-block">
+										你仍然可以查看和更新目前已有的任务, 包括它们的附件和讨论，但是你不能再创建新的任务。立刻订购来重新获得有所有风车的功能。如果你有任何问题，请随时<a href="mailto:support@fengche.co">联系我们</a>。
+										</p>
+
+									</div>
+
+									<hr>
+
+									<div id="pricing-table">
+										<div class="plan-switcher">
+											<div class="btn-group">
+												<a class="btn choose-cc" href="#">信用卡</a>
+												<a class="btn choose-alipay active" href="#">支付宝</a>
+											</div>
+											<div class="btn-group">
+												<a class="btn choose-monthly" href="#">按月付费</a>
+												<a class="btn choose-yearly active" href="#">按年付费 (付10月送2月)</a>
+											</div>
+										</div>
+										<table class="pricing">
+											<tbody>
+												<tr class="team">
+													<td class="bootstrap"><span>个人型</span></td>
+													<td class="startup"><span>初创型</span></td>
+													<td class="growth"><span>成长型</span></td>
+													<td class="business"><span>商业型</span></td>
+												</tr>
+												<tr class="price">
+													<td class="bootstrap monthly hidden">
+														<sup>¥</sup>10<small>/月</small>
+													</td>
+													<td class="bootstrap yearly">
+														<sup>¥</sup>100<small>/年</small>
+													</td>
+													<td class="startup monthly hidden">
+														<sup>¥</sup>66<small>/月</small>
+													</td>
+													<td class="startup yearly">
+														<sup>¥</sup>660<small>/年</small>
+													</td>
+													<td class="growth monthly hidden">
+														<sup>¥</sup>126<small>/月</small>
+													</td>
+													<td class="growth yearly">
+														<sup>¥</sup>1260<small>/年</small>
+													</td>
+													<td class="business monthly hidden">
+														<sup>¥</sup>286<small>/月</small>
+													</td>
+													<td class="business yearly">
+														<sup>¥</sup>2860<small>/年</small>
+													</td>
+												</tr>
+												<tr class="volume">
+													<td class="bootstrap">可容纳 2 个用户</td>
+													<td class="startup">可容纳 5 个用户</td>
+													<td class="growth">可容纳 10 个用户</td>
+													<td class="business">可容纳 20 个用户</td>
+												</tr>
+												<tr class="cta">
+													<td class="bootstrap"><a class="btn" href="/plans/new?plan=Bootstrap" target="_blank" title="个人型">购买此方案</a></td>
+													<td class="startup"><a class="btn" href="/plans/new?plan=Startup" target="_blank" title="初创型">购买此方案</a></td>
+													<td class="growth"><a class="btn" href="/plans/new?plan=Growth" target="_blank" title="成长型">购买此方案</a></td>
+													<td class="business"><a class="btn" href="/plans/new?plan=Business" target="_blank" title="商业型">购买此方案</a></td>
+												</tr>
+											</tbody>
+										</table>
+
+
+										<p class="note">
+										访问<a href="/pricing" target="_blank">价格方案</a>页面获得更多信息
+										</p>
+									</div><!-- #pricing-table -->
+								</div>
+							</div>
+
+						</div>
+						</article>
+
+						<article id="users-invite" class="modal" style="display:none">
+						<header class="modal-header">
+						<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+						<h3>邀请团队成员</h3>
+						</header>
+
+						<section class="modal-body">
+						<form id="invite-user-form" action="">
+							<input id="invite-user" type="text" placeholder="输入电子邮件，用逗号分隔...">
+							<button class="button button-primary">发送</button>
+						</form>
+
+
+						<ul class="unstyled invitations"></ul>
+
+						</section>
+
+						</article>
+
+
+
+
+						<div id="keyboard-help">
+
+							<table>
+								<tbody><tr>
+										<th>&nbsp;</th>
+										<th>浏览</th>
+										<th>&nbsp;</th>
+										<th>操作</th>
+									</tr>
+									<tr>
+										<td class="hotkey"><span class="button">↓</span> / <span class="button">j</span></td>
+										<td class="desc">
+											查看下一个任务</td>
+										<td class="hotkey"><span class="button">shift</span> + <span class="button">↓</span> / <span class="button">j</span></td>
+										<td class="desc">
+											移动任务到下一个状态
+										</td>
+									</tr>
+									<tr>
+										<td class="hotkey"><span class="button">↑</span> / <span class="button">k</span></td>
+										<td class="desc">
+											查看上一个任务
+										</td>
+										<td class="hotkey"><span class="button">shift</span> + <span class="button">↑</span> / <span class="button">k</span></td>
+										<td class="desc">
+											移动任务到上一个状态
+										</td>
+									</tr>
+									<tr>
+										<td class="hotkey"><span class="button">shift</span> + <span class="button">←</span></td>
+										<td class="desc">
+											收起左边栏
+										</td>
+										<td class="hotkey"><span class="button">/</span></td>
+										<td class="desc">
+											搜索任务
+										</td>
+									</tr>
+									<tr>
+										<td class="hotkey"><span class="button">shift</span> + <span class="button">→</span></td>
+										<td class="desc">
+											展开左边栏
+										</td>
+										<td class="hotkey"><span class="button">n</span></td>
+										<td class="desc">
+											添加任务
+										</td>
+									</tr>
+							</tbody></table>
+
+							<div class="close-guide-overlay">
+								<a href="#"><i class="iconfont prag-cross"></i></a>
+							</div>
+
+						</div>
+
+						<div id="guide-wrapper">
+							<div class="guide-overlay"></div>
+							<ul class="guide-annotation">
+								<li id="annotation-dashboard">
+								控制面板
+								</li>
+								<li id="annotation-project">
+								创建/切换项目
+								</li>
+								<li id="annotation-new-ticket">
+								添加任务
+								</li>
+								<li id="annotation-help">
+								帮助
+								</li>
+								<li id="annotation-notification">
+								通知中心
+								</li>
+								<li id="annotation-profile">
+								个人资料和组织信息
+								</li>
+								<li id="annotation-new-iteration">
+								新建任务列表/邀请团队成员
+								</li>
+								<li id="annotation-manage-iteration">
+								管理任务列表和团队成员
+								</li>
+							</ul>
+							<div class="close-guide-overlay">
+								<a href="#">关闭本向导 <i class="iconfont prag-cross"></i></a>
+								<br><br>
+								或者按 'ESC' 关闭. 查看更多的快捷键请按 '?'.
+							</div>
+						</div>
+
+						<div id="video-wrapper">
+							<div class="box">
+								<ul class="video-list">
+									<li id="video-create-task">
+									<h3>如何创建任务?</h3>
+									</li>
+									<li id="video-change-status">
+									<h3>如何改变任务状态?</h3>
+									</li>
+									<li id="video-manage-task">
+									<h3>如何管理任务?</h3>
+									</li>
+									<li id="video-create-list">
+									<h3>如何创建任务列表?</h3>
+									</li>
+									<li id="video-create-project">
+									<h3>如何创建项目?</h3>
+									</li>
+									<li id="video-invite-member">
+									<h3>如何邀请团队成员?</h3>
+									</li>
+									<li id="video-project-template">
+									<h3>关于项目模板</h3>
+									</li>
+								</ul>
+							</div>
+							<div class="close-guide-overlay">
+								<a href="#"><i class="iconfont prag-cross"></i></a>
+							</div>
+						</div>
+
+						<article id="uservoice" class="modal" style="display:none">
+						<form id="uservoice-create">
+							<header class="modal-header">
+							<a href="#" class="close" data-dismiss="modal"><i class="iconfont prag-cross"></i></a>
+							<h3>联系我们</h3>
+							</header>
+
+							<section class="modal-body">
+							<h4>请填写内容：</h4>
+							<div class="error-messages"></div>
+							<div class="control-group">
+								<textarea type="text" class="text" name="uservoice" rows="8" required=""></textarea>
+								<p class="help-block">欢迎你的意见和建议，帮助我们持续改进产品。</p>
+							</div>
+							<!-- when submit successfully replace with this
+							<p class="successfully">感谢提交，我们会与你取得联系！</p> -->
+							</section>
+
+							<footer class="modal-footer">
+							<button class="button button-primary">发送</button>
+							</footer>
+						</form>
+						</article>
+
+						<div id="reload-overlay">
+							<div class="fullpage-overlay"></div>
+							<div class="hint">
+								你与服务器的连接已断开一段时间，项目已经有新的更新，请你<br><br>
+								<a href="#">
+									立刻刷新
+									<i class="iconfont prag-cross"></i>
+								</a>
+							</div>
+						</div>
+
+
+						<!-- JavaScript at the bottom for fast page loading -->
+
+						<script src="https://dn-pragmaticly.qbox.me/assets/application-8b9786b5cc082ba241c4c199f6200cf6.js" type="text/javascript"></script>
+						<script src="https://dn-pragmaticly.qbox.me/assets/i18n/zh-cn-2029fdc5b880ddfea0db482474747352.js" type="text/javascript"></script>
+						<script type="text/javascript">
+							I18n.locale = "zh-cn";
+							I18n.fallbacks = true;
+						</script>
+						<script src="https://dn-pragmaticly.qbox.me/assets/dashboard-6430105af1bca9b6c766460344d9fc63.js" type="text/javascript"></script>
+
+
+						<!-- begin olark code --><script data-cfasync="false" type="text/javascript">/*{literal}<![CDATA[*/
+								/* custom configuration goes here (www.olark.com/documentation) */
+
+
+							<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+								NREUMQ.push(["load",new Date().getTime()]);
+								var e=document.createElement("script");
+								e.type="text/javascript";
+								e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+									"js-agent.newrelic.com/nr-100.js";
+								document.body.appendChild(e);
+								if(NREUMQ.a)NREUMQ.a();
+							};
+							NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+							};
+							NREUMQ.push(["nrfj","beacon-1.newrelic.com","219035bdb9","706489","cV1XFxMJDQ9dRxlGR11YXAAVFU4QUFpB",0,72,new Date().getTime(),"","","","",""]);</script>
+
+						<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button id="cboxPrevious"></button><button id="cboxNext"></button><button id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div><button id="cboxClose"></button></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none;"></div></div><div style="position: absolute; top: -10000px; left: -10000px; width: 100px; font-size: 14px; font-family: 'Helvetica Neue', Helvetica, Arial, 'Hiragino Sans GB', 'Microsoft YaHei', 微软雅黑, STHeiti, 'WenQuanYi Micro Hei', sans-serif; font-weight: 400; line-height: 20px; resize: none;"></div><embed id="xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd" type="application/thunder_download_plugin" height="0" width="0"><div id="at-view" class="at-view"><ul id="at-view-ul"></ul></div><script type="text/javascript" src="https://js-agent.newrelic.com/nr-100.js"></script><span style="display: none;"><iframe style="display: none !important" id="_olark_framesocket60542" src="https://static.olark.com/jsclient-bucket3/storage.html?v=1409865287822#TK40604681125842035" onload="try{window._olark_framesocket60542()}catch(e){_olark_framesocket60542()}"></iframe></span><div id="habla_beta_container_do_not_rely_on_div_classes_or_names" class="habla-browser-mozilla habla-desktop olrk-noquirks"><div id="hbl_operator_state_div" class="olrk-away"><div id="hbl_region" class="olrk-normal"><div id="habla_window_state_div" class=" olrk-state-compressed"><div id="habla_window_div" style="margin: 0px 20px; bottom: 0px; right: 0px; display: none; position: fixed;" class="habla_window_div_base hbl_pal_main_width olrk-fixed-bottom olrk-fixed-right "><div id="habla_compressed_div" style="display: none;"></div><div id="habla_panel_div" class="habla_panel_border hbl_pal_main_bg hbl_pal_panel_border hbl_pal_main_font_family hbl_pal_main_font_size " style="display: none;"><div id="habla_both_div" style="display: none;"><div id="habla_topbar_div" class="habla_topbar_div_normal hbl_pal_title_fg hbl_pal_title_bg habla_topbar_div_compressed "><a id="habla_sizebutton_a" class="habla_button habla_button_a_normal hbl_pal_header_font_size hbl_pal_main_font_family hbl_pal_button_bg hbl_pal_button_fg ">^</a><a id="habla_oplink_a" class="habla_oplink_a_normal hbl_pal_header_font_size hbl_pal_title_fg ">给我们留言</a></div></div><div id="habla_expanded_div" style="display: none;"><div id="habla_middle_div"><div id="habla_middle_wrapper_div"><div id="habla_conversation_div" class="hbl_panel habla_conversation_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg hbl_pal_main_bg   habla_conversation_message_on " style="height: 155px; overflow: hidden; display: none;"><span id="hbl_body_message">有任务问题? 咨询我们！</span></div><div id="habla_offline_message_sent_div" class="hbl_panel habla_offline_message_sent_div hbl_pal_main_height hbl_pal_control_border hbl_pal_main_fg " style="display: none;">Thanks for your message!  We'll get back to you shortly.</div><div id="habla_offline_message_div" class="hbl_panel habla_offline_message_div hbl_pal_control_border hbl_pal_main_fg " style="display: block;"><span id="habla_offline_message_span">我们暂时不在线，请留言，我们会尽快联系你，谢谢。</span><div class="hbl_txt_wrapper"><textarea id="habla_name_input" name="habla_name_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="输入你的名字" style="height: 20px; display: block;"></textarea></div><div class="hbl_txt_wrapper"><textarea id="habla_offline_email_input" name="habla_offline_email_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="输入你的邮件地址" style="height: 20px; display: block;"></textarea></div><div class="hbl_txt_wrapper"><textarea id="habla_offline_body_input" name="habla_offline_body_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="We're not around but we still want to hear from you!  Leave us a note:" style="height: 70px; display: block;"></textarea></div><br id="habla_br"><span id="habla_offline_error_span" class="habla_offline_error_span "></span><input id="habla_offline_submit_input" name="habla_offline_submit_input" type="submit" class="habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg " value="Send" style="display: block;"><div id="habla_offline_clear_div" class="clear_style "></div></div><div id="habla_pre_chat_div" class="hbl_panel habla_pre_chat_div hbl_pal_main_height hbl_pal_main_fg " style="display: none; height: 155px;"><span id="habla_pre_chat_span">Hi, I am around, click 'start chatting' to contact me.</span><div class="hbl_txt_wrapper"><textarea id="habla_pre_chat_name_input" name="habla_pre_chat_name_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="输入你的名字" style="height: 20px; line-height: 20px;"></textarea></div><div class="hbl_txt_wrapper"><textarea id="habla_pre_chat_email_input" name="habla_pre_chat_email_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="输入你的邮件地址" style="height: 20px; line-height: 20px;"></textarea></div><div class="hbl_txt_wrapper" style="display: none;"><textarea id="habla_pre_chat_phone_input" name="habla_pre_chat_phone_input" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="输入你的手机号" style="height: 20px; line-height: 20px; display: none;"></textarea></div><br id="habla_br_2"><span id="habla_pre_chat_error_span"></span><input id="habla_pre_chat_submit_input" name="habla_pre_chat_submit_input" type="submit" class="habla_pre_chat_form_field habla_offline_submit_input hbl_pal_offline_submit_fg hbl_pal_control_border hbl_pal_offline_submit_bg " value="Click here to start chatting"><div id="habla_pre_chat_clear_div" class="clear_style "></div></div></div><form id="habla_chatform_form" action="#" method="GET" autocomplete="off" class="habla_chatform_form " style="display: none;"><div id="habla_input_div" class="habla_input_div "><div class="hbl_txt_wrapper"><textarea id="habla_wcsend_input" name="habla_wcsend_input" size="undefined" class="habla_wcsend_field habla_wcsend_input_pre habla_wcsend_input_normal hbl_pal_input_pre_fg hbl_pal_main_font_family hbl_pal_input_font_size hbl_pal_control_border " placeholder="按回车键发送问题" disabled="" style="line-height: 20px; height: 20px; display: none;"></textarea></div></div></form></div><div style="font-family: helvetica, sans-serif; text-align: center; text-transform: uppercase; font-size: 9px; letter-spacing: 2px; font-weight: bold; padding: 3px 0px 5px !important; color: rgb(170, 170, 170) !important; clear: both;"><span style="display:none"><a id="hblink9" style="font-family: helvetica, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: #e75917 !important;"></a>http://www.olark.com</span>Powered By <a style="font-family: helvetica, sans-serif; text-transform: uppercase; font-size: 9px !important; letter-spacing: 2px; font-weight: bold; color: #e75917 !important;" href="http://www.olark.com/welcome/?rid=8594-504-10-6122&amp;rid=8594-504-10-6122&amp;utm_medium=widget&amp;utm_campaign=powered_by&amp;utm_source=8594-504-10-6122" id="hblink99" target="_blank" rel="nofollow">Olark</a></div></div></div><div id="habla_closed_div" style="display: none;"></div></div></div></div></div></div><div class="vimiumReset vimiumHUD" style="right: 150px; opacity: 0; display: none;"></div></body></html>
