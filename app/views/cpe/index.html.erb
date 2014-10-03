@@ -1,0 +1,82 @@
+<section class="panel list-panel tickets full-panel">
+<header class="panel-header navbar guide-spot">
+<ul class="nav centerNav">
+	<%= render 'shared/search' %>
+	<%= render 'shared/profile2' %>
+</ul>
+</header>
+
+<article class="content">
+<div class="list-head" style="display: block;">
+	<h2>
+		<span class="title">CPE 列表</span>
+		<div class="list-filter dropdown">
+			筛选: <a class="dropdown-toggle" data-toggle="dropdown" data-target="list-fileter-menu"><span class="sorter">默认</span> <i class="iconfont prag-chevron-down"></i></a>
+			<ul id="list-fileter-menu" class="dropdown-menu" role="menu">
+				<li role="presentation"><a role="menuitem" class="sort" data-sort="sequence" tabindex="-1" href="#">默认</a></li>
+				<li role="presentation"><a role="menuitem" class="sort" data-sort="priority" tabindex="-1" href="#">按厂商</a></li>
+				<li role="presentation"><a role="menuitem" class="sort" data-sort="assignee_id" tabindex="-1" href="#">按序列号</a></li>
+				<li role="presentation"><a role="menuitem" class="sort" data-sort="due_date" tabindex="-1" href="#">按创建时间</a></li>
+				<!--li role="presentation" class="divider"></li-->
+			</ul>
+		</div>
+	</h2>
+</div>
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 232px;">
+	<section class="ticketList" style="display: block; overflow: hidden; width: auto; height: 232px;">
+
+	<table class="table">
+		<th><input type="checkbox"></th>
+		<th>厂商</th>
+		<th>设备名</th>
+		<th>序列号</th>
+		<th>创建时间</th>
+		<th>更新时间</th>
+		<th>固件版本</th>
+		<th>等待的任务</th>
+		<th>状态</th>
+		<tr>
+			<td><input type="checkbox"></td>
+			<td>FakeManucturer</td>
+			<td>RouterHGW</td>
+			<td>J00000001</td>
+			<td>9/16/2014 08:38:36</td>
+			<td>9/16/2014 08:38:36</td>
+			<td>1.00</td>
+			<td>0</td>
+			<td>1</td>
+		</tr>
+	</table>
+
+	<a href="#" class="button button-primary">删除</a>
+	<a href="#" class="button button-primary">刷新</a>
+	<a href="#" class="button button-primary">追溯 CPE</a>
+	<a href="#" class="button button-primary">导出为 XML</a>
+	<a href="#" class="button button-primary">导出为 CSV</a>
+
+
+</article>
+</section>
+
+<!--<section class="panel detail-panel ticketDetail">-->
+
+
+<!--div class="ticket-head"></div>
+
+					<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: 226px;"><article id="sectionAndActivities" class="content" style="overflow: hidden; width: auto; height: 226px;">
+
+						<section class="ticketSection"><div class="ticket-placeholder">
+							<p>
+							<strong>任务详情栏</strong>，选择一个任务来查看和编辑详细信息。<br><span class="tip">小贴士：可以用 <span class="button">↑</span> <span class="button">↓</span> 或者 <span class="button">j</span> <span class="button">k</span> 来选择任务
+							</span></p>
+						</div>
+						</section>
+
+						<section class="activities">
+						<header class="header hide">
+						<h4>动态</h4>
+						</header>
+
+						<div id="comments" class="comments"></div-->
+							<!--</section>-->
+							<!--</article>-->
