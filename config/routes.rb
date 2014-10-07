@@ -55,4 +55,5 @@ Toal::Application.routes.draw do
   #   end
 	
 	resources :cpe
+	resources :log
 end
