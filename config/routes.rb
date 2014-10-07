@@ -3,7 +3,7 @@ Toal::Application.routes.draw do
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  # root 'welcome#index'
+	 root 'front#index'
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
@@ -56,4 +56,5 @@ Toal::Application.routes.draw do
 	
 	resources :cpe
 	resources :log
+	resources :front
 end
