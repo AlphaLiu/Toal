@@ -1,0 +1,207 @@
+<section class="panel list-panel tickets full-panel">
+<header class="panel-header navbar guide-spot">
+<ul class="nav centerNav">
+	<%= render 'shared/search' %>
+	<%= render 'shared/profile2' %>
+</ul>
+</header>
+<article class="content">
+
+<%= render 'shared/vendor_info' %>
+
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
+
+<div class="list-head" style="display: block;">
+	<h2>
+		<span class="title">Device.ManagementServer</span>
+	</h2>
+</div>
+	<section class="ticketList" style="display: block; overflow: hidden; width: auto; height: auto">
+
+	<table class="table">
+		<th>参数名</th>
+		<th>参数值</th>
+		<th>通知</th>
+		<th>访问列表</th>
+		<th>推送</th>
+		<tr>
+			<th>PeriodicInformEnable</th>
+			<td><input type="checkbox" checked></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>PeriodicInformInterval, sec</th>
+			<td><input type="text" value="300"></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>PeriodicInformTime</th>
+			<td>
+				<input type="text" value="0001-01-01T00:00:00">				
+			</td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>URL</th>
+			<td>
+				<input type="text" value="http://10.0.0.1/acs">
+			</td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>Username</th>
+			<td><input type="text" value="tr069"></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>Password</th>
+			<td><input type="password" value="123456"></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>ConnectionRequestURL</th>
+			<td>http://10.0.0.2:7547/ConnectionRequest</td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>ConnectionRequestUsername</th>
+			<td><input type="text" value="ftacs"></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+		<tr>
+			<th>ConnectionRequestPassword</th>
+			<td><input type="passowrd" value="123456"></td>
+			<td>
+				<select id="pi_notify" name="pi_notify">
+					<option value="0">关闭</option>
+					<option value="1">开启</option>
+				</select>
+			</td>
+			<td>
+				<select id="pi_ac" name="pi_ac">
+					<option value="0">全部</option>
+					<option value="1">ACS only</option>
+				</select>
+			</td>
+			<td>
+			<input type="checkbox">
+			</td>
+		</tr>
+	</table>
+	<%= render 'shared/bottom_buttom' %>
+	</section>
+</div>
+</article>
+		<th></th>
