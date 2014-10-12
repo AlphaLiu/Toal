@@ -57,4 +57,6 @@ Toal::Application.routes.draw do
 	resources :cpe
 	resources :log
 	resources :front
+	resources :diag
+	resources :custom
 end

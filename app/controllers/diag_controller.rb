@@ -1,0 +1,2 @@
+class DiagController < ApplicationController
+end

@@ -1,0 +1,56 @@
+<section class="panel list-panel tickets full-panel">
+<header class="panel-header navbar guide-spot">
+<ul class="nav centerNav">
+	<%= render 'shared/search' %>
+	<%= render 'shared/profile2' %>
+</ul>
+</header>
+<article class="content">
+
+<div class="list-head" style="display: block;">
+	<ul class="nav navbar">
+		<li>序列号：J00000001</li>
+		<li>设备名：RouterHGW</li>
+		<li>厂商：  Manucturer</li>
+	</ul>
+</div>
+
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
+
+	<section class="ticketList" style="display: block; overflow: hidden; width: auto; height: auto;">
+
+	<table class="table">
+		<tr>
+			<th>RPC 方法</th>
+			<td>
+				<select id="method" name="method">
+					<option value="SetParameterValues">SetParameterValues</option>
+					<option value="GetParameterValues">GetParameterValues</option>
+					<option value="GetParameterNames">GetParameterNames</option>
+					<option value="AddObject">AddObject</option>
+					<option value="SetParameterAttributes">SetParameterAttributes</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<th>内容</th>
+			<td>
+				<textarea style="width: 500px; margin-top: 0px; margin-bottom: 9px; height: 226px;" id="content">
+<cwmp:SetParameterValues>
+	<ParameterList SOAP-ENC:arrayType="cwmp:ParameterValueStruct[1]">
+		<ParameterValueStruct>
+			<Name>Device.WiFi.SSID.1.SSID</Name>
+			<Value xsi:type="xsd:string">test_ssid_1</Value>
+		</ParameterValueStruct>
+	</ParameterList>
+	<ParameterKey>3528972</ParameterKey>
+</cwmp:SetParameterValues>
+
+				</textarea>
+			</td>
+		</tr>
+	</table>
+	<%= render 'shared/bottom_buttom' %>
+</section>
+</div>
+</article>

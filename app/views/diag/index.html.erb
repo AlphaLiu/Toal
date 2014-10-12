@@ -1,0 +1,71 @@
+<section class="panel list-panel tickets full-panel">
+<header class="panel-header navbar guide-spot">
+<ul class="nav centerNav">
+	<%= render 'shared/search' %>
+	<%= render 'shared/profile2' %>
+</ul>
+</header>
+<article class="content">
+
+<div class="list-head" style="display: block;">
+	<ul class="nav navbar">
+		<li>序列号：J00000001</li>
+		<li>设备名：RouterHGW</li>
+		<li>厂商：  Manucturer</li>
+	</ul>
+	<hr>
+</div>
+
+<div class="slimScrollDiv" style="position: relative; overflow: hidden; width: auto; height: auto;">
+
+	<section class="ticketList" style="display: block; overflow: hidden; width: auto; height: auto">
+	<table>
+		<tr>
+			<td>诊断类型： </td>
+			<td><select>
+					<option value="0">IPPing</option>
+					<option value="1">Traceroute</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>连接：</td>
+			<td>
+				<select id="con_type" name="con_type">
+					<option value="0">默认路由</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2"><hr></td>
+		</tr>
+		<tr>
+			<td>主机：</td>
+			<td><input type="text" id="host"></td>
+		</tr>
+		<tr>
+			<td>重复次数：</td>
+			<td><input type="text" id="repeat_num"></td>
+		</tr>
+		<tr>
+			<td>数据大小：</td>
+			<td>
+			<select id="data_size" name="data_size">
+				<option value="8">8</option>
+				<option value="32">32</option>
+				<option value="64">64</option>
+				<option value="128">128</option>
+				<option value="256">256</option>
+			</select>			
+			</td>
+		</tr>
+		<tr>
+			<td>Timeout：</td>
+			<td><input type="text" id="timeout"></td>
+		</tr>
+	</table>
+
+	<%= render 'shared/bottom_buttom' %>
+	</section>
+</div>
+</article>
